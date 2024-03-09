@@ -5,7 +5,7 @@ import TaskContext from '../context/TaskContext';
 function Active() {
     const { tasks } = useContext(TaskContext);
     return ( 
-        <div>
+        <div >
         {
             (tasks.length !==0) ? (
                 tasks.map((task, index) => {

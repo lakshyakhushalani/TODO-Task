@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import TaskContext from '../context/TaskContext';
 function AllTask() {
     const { tasks } = useContext(TaskContext);
+   
     return (
         <div>
             {
@@ -13,7 +14,7 @@ function AllTask() {
                             <Task
                                 key={index}
                                 task={task}
-                                id={index}
+                                id={index} 
                             />
                         )
                     })
